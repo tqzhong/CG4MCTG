@@ -1,7 +1,7 @@
 
 model_name_or_path=gpt2-medium
-output_dir=../temps
-output_data_dir=../temps
+output_dir=../ckpt
+output_data_dir=../test_data
 num_train_epochs=3
 lambda_s=0.01
 dataset=Amazon
