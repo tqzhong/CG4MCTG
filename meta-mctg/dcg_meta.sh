@@ -1,5 +1,5 @@
 
-model_name_or_path=/home/zhongtq/pretrained_lms/GPT2-m/
+model_name_or_path=gpt2-medium
 output_dir=../temps
 output_data_dir=../temps
 num_train_epochs=3
