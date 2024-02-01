@@ -33,7 +33,7 @@ In this path, there are four folders named "Amazon", "Fyelp", "Mixture", and "Ye
 
 ### 2. Datasets Information
 
-#### 2.1 FYelp
+#### 2.1 Fyelp
 4 attributes: "sentiment", "gender", "cuisine", "tense"  
 		"sentiment"$\in${"Positive","Negative"}  
 		"gender"$\in${"Male","Female"}  
