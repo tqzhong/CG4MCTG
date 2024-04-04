@@ -1,0 +1,3 @@
+[submodule "compmctg_protocols"]
+	path = compmctg_protocols
+	url = https://github.com/Zhaoyi-Li21/compmctg_protocols
