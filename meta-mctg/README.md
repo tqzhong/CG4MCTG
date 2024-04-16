@@ -10,5 +10,6 @@ For each method, we obtain results as follow (take ChatGPT as an example)
 - $G_{avg}=\frac{1}{2}(\frac{A_{i.d.}^{holdout}-A_{comp}^{holdout}}{A_{i.d.}^{holdout}}+\frac{A_{i.d.}^{acd}-A_{comp}^{acd}}{A_{i.d.}^{acd}})$
 
 where each accuracy and perplexity in the table above (except for $A_{avg}$ and $P_{avg}$) are obtained by averaging the accuracies across four datasets (Fyelp, Amazon, YELP, Mixture):
-- $A_{type}^{mode}=\frac{1}{4}(A_{type}^{mode}(Fyelp)+A_{type}^{mode}(Amazon)+A_{type}^{mode}(YELP)+A_{type}^{mode}(Mixture)),\quad type\in\{i.d., comp\}, mode\in\{original, holdout, acd\}, (comp, original)\notin (type, mode)$
-- $P_{type}^{mode}=\frac{1}{4}(P_{type}^{mode}(Fyelp)+P_{type}^{mode}(Amazon)+P_{type}^{mode}(YELP)+P_{type}^{mode}(Mixture)),\quad type\in\{i.d., comp\}, mode\in\{original, holdout, acd\}, (comp, original)\notin (type, mode)$
+- $A_{type}^{mode}=\frac{1}{4}(A_{type}^{mode}(Fyelp)+A_{type}^{mode}(Amazon)+A_{type}^{mode}(YELP)+A_{type}^{mode}(Mixture))$
+- $P_{type}^{mode}=\frac{1}{4}(P_{type}^{mode}(Fyelp)+P_{type}^{mode}(Amazon)+P_{type}^{mode}(YELP)+P_{type}^{mode}(Mixture))$
+where $\quad type\in\{i.d., comp\}, mode\in\{original, holdout, acd\}, (comp, original)\notin (type, mode)$
