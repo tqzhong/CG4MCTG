@@ -7,3 +7,4 @@ For each method, we obtain results as follow (take ChatGPT as an example)
 
 - $A_{avg}=\frac{1}{5}(A_{i.d.}^{Original}+A_{i.d.}^{Holdout}+A_{comp}^{Holdout}+A_{i.d.}^{ACD}+A_{comp}^{ACD})$
 - $P_{avg}=\frac{1}{5}(P_{i.d.}^{Original}+P_{i.d.}^{Holdout}+P_{comp}^{Holdout}+P_{i.d.}^{ACD}+P_{comp}^{ACD})$
+- $G_{avg}=\frac{1}{2}(\frac{A_{i.d.}^{Holdout}-A_{comp}^{Holdout}}{A_{i.d.}^{Holdout}}+\frac{A_{i.d.}^{acd}-A_{comp}^{acd}}{A_{i.d.}^{acd}})$
