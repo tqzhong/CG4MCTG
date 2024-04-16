@@ -12,5 +12,5 @@ For each method, we obtain results as follow (take ChatGPT as an example)
 where each accuracy and perplexity in the table above (except for $A_{avg}$ and $P_{avg}$) are obtained by averaging the accuracies across four datasets (Fyelp, Amazon, YELP, Mixture):
 - $A_{type}^{mode}=\frac{1}{4}(A_{type}^{mode}(Fyelp)+A_{type}^{mode}(Amazon)+A_{type}^{mode}(YELP)+A_{type}^{mode}(Mixture))$
 - $P_{type}^{mode}=\frac{1}{4}(P_{type}^{mode}(Fyelp)+P_{type}^{mode}(Amazon)+P_{type}^{mode}(YELP)+P_{type}^{mode}(Mixture))$
-<br>
-where $\quad type\in{i.d., comp}, mode\in{original, holdout, acd}, (comp, original)\notin(type, mode)$
+
+where $type\in{i.d., comp}, mode\in{original, holdout, acd}, (comp, original)\notin(type, mode)$
