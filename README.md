@@ -3,7 +3,7 @@ This is the official implementation for paper [Benchmarking and Improving Compos
 
 ## Details
 - About dataset in compmctg benchmark, please check [data/README.md](https://github.com/tqzhong/CG4MCTG/tree/main/data)
-- About meta-mctg Framework, please check [meta-mctg/README.md](https://github.com/tqzhong/CG4MCTG/tree/main/meta-mctg)
+- About meta-mctg framework, please check [meta-mctg/README.md](https://github.com/tqzhong/CG4MCTG/tree/main/meta-mctg)
 - About evaulation system, please check [evaluation/README.md](https://github.com/tqzhong/CG4MCTG/tree/main/evaluation)
 - About construction of protocols in compmctg benchmark, please check [compmctg_protocols/README.md](https://github.com/Zhaoyi-Li21/compmctg_protocols)
 
