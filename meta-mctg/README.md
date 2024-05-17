@@ -91,3 +91,22 @@ do
 done
 ```
 
+Similarly, for the dataset Fyelp, Amazon, and Mixture, note that **the results of ACD protocol of dataset Mixture and Amazon is the considered the same as their Few-Shot protocol's counterpart, which implies that the results from this section will be reused in both the Benchmark main table and the Few-Shot results table.**
+
+Then we get the results as follows:
+<table>
+  <tr>
+    <th>Heading 1</th>
+    <th colspan="2">Heading 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+</table>
+
+
+
+
+
