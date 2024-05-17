@@ -36,9 +36,9 @@ In this path, there are four folders named "Amazon", "Fyelp", "Mixture", and "Ye
 #### 2.1 Fyelp
 4 attributes: "sentiment", "gender", "cuisine", "tense"  
 		"sentiment"&isin;{"Positive","Negative"}  
-		"gender"$\in${"Male","Female"}  
-		"cuisine"$\in${"Asian", "American", "Mexican", "Bar", "dessert"}  
-		"tense"$\in${"Present","Past"}  
+		"gender"&isin;{"Male","Female"}  
+		"cuisine"&isin;{"Asian", "American", "Mexican", "Bar", "dessert"}  
+		"tense"&isin;{"Present","Past"}  
 
 attribute combinations: 40
 		classifier data number: 40000, 1000 per one combination
@@ -47,8 +47,8 @@ attribute combinations: 40
 #### 2.2 Amazon
 
 2 attributes: "sentiment", "topic" 
-		"sentiment"$\in${"Positive","Negative"}  
-		"topic"$\in${"Books", "Clothing", "Music", "Electronics", "Movies", "Sports"}
+		"sentiment"&isin;{"Positive","Negative"}  
+		"topic"&isin;{"Books", "Clothing", "Music", "Electronics", "Movies", "Sports"}
 
 attribute combinations: 12
 		classifier data number: 180000, 15000 per one combination
@@ -56,9 +56,9 @@ attribute combinations: 12
 
 #### 2.3 Yelp
 3 attributes: "sentiment", "pronoun", "tense" 
-		"sentiment"$\in${"Positive","Negative"}  
-		"pronoun"$\in${"plural","singular"}
-		"tense"$\in${"Present","Past"}
+		"sentiment"&isin;{"Positive","Negative"}  
+		"pronoun"&isin;{"plural","singular"}
+		"tense"&isin;{"Present","Past"}
 
 attribute combinations: 8
 		classifier data number: 24000, 3000 per one combination
@@ -66,8 +66,8 @@ attribute combinations: 8
 
 #### 2.4 Mixture(IMDB, OpeNER and Sentube)
 2 attributes: "sentiment", "topic_cged" 
-		"sentiment"$\in${"Positive","Negative"}  
-		"topic_cged"$\in${"movies", "opener", "tablets", "auto"}
+		"sentiment"&isin;{"Positive","Negative"}  
+		"topic_cged"&isin;{"movies", "opener", "tablets", "auto"}
 
 attribute combinations: 8
 		classifier data number: 4264, 533 per one combination
