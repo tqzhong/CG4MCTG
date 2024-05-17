@@ -37,7 +37,7 @@ In this path, there are four folders named "Amazon", "Fyelp", "Mixture", and "Ye
 4 attributes: "sentiment", "gender", "cuisine", "tense"  
 		"sentiment"$\in${"Positive","Negative"}  
 		"gender"$\in${"Male","Female"}  
-		"cuisine"$\in${"Asian","American","Mexican","Bar","dessert"}  
+		"cuisine"$\in${"Asian", "American", "Mexican", "Bar", "dessert"}  
 		"tense"$\in${"Present","Past"}  
 
 attribute combinations: 40
