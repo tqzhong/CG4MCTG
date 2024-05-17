@@ -97,56 +97,73 @@ Then we get the results as follows:
 <table>
     <tr>
         <th rowspan="2">Dataset</th>
-        <th colspan="3">Original</th>
-        <th colspan="3">Hold-Out</th>
-        <th colspan="3">ACD</th>
+        <th colspan="2">Original</th>
+        <th colspan="4">Hold-Out</th>
+        <th colspan="4">ACD</th>
     </tr>
     <tr>
-        <th>ΔA(%)</th>
-        <th>P(%)</th>
-        <th>P_full(%)</th>
-        <th>ΔA(%)</th>
-        <th>P(%)</th>
-        <th>P_full(%)</th>
-        <th>ΔA(%)</th>
-        <th>P(%)</th>
-        <th>P_full(%)</th>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>comp</sub></th>
+        <th>P<sub>comp</sub></th>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>comp</sub></th>
+        <th>A<sub>comp</sub></th>
     </tr>
     <tr>
-        <td>LAMA-in-context Learning</td>
-        <td>61.35%</td>
-        <td>77.30%</td>
-        <td>62.16%</td>
-        <td>25.55%</td>
-        <td>40.82%</td>
-        <td>38.50%</td>
-        <td>62.93%</td>
-        <td>21.17%</td>
-        <td>24.63%</td>
+        <td>Fyelp</td>
+        <td>66.43%</td>
+        <td>53.31</td>
+        <td>66.49%</td>
+        <td>53.50</td>
+        <td>66.39%</td>
+        <td>53.52</td>
+        <td>66.01%</td>
+        <td>53.29</td>
+        <td>64.71%</td>
+        <td>53.67</td>
     </tr>
     <tr>
-        <td>LAMA-2 (Punyakanok et al., 2023)</td>
-        <td>57.51%</td>
-        <td>57.15%</td>
-        <td>56.62%</td>
-        <td>18.29%</td>
-        <td>49.21%</td>
-        <td>18.49%</td>
-        <td>57.13%</td>
-        <td>49.75%</td>
-        <td>18.22%</td>
+        <td>Amazon</td>
+        <td>84.48%</td>
+        <td>46.66</td>
+        <td>84.71%</td>
+        <td>47.20</td>
+        <td>84.51%</td>
+        <td>47.09</td>
+        <td>84.15%</td>
+        <td>48.05</td>
+        <td>68.28%</td>
+        <td>48.36</td>
     </tr>
     <tr>
-        <td>ChatGPT (OpenAI, 2023)</td>
-        <td>57.51%</td>
-        <td>57.15%</td>
-        <td>56.62%</td>
-        <td>18.29%</td>
-        <td>49.21%</td>
-        <td>18.49%</td>
-        <td>57.13%</td>
-        <td>49.75%</td>
-        <td>18.22%</td>
+        <td>YELP</td>
+        <td>84.46%</td>
+        <td>57.08</td>
+        <td>83.07%</td>
+        <td>79.05</td>
+        <td>80.29%</td>
+        <td>80.58</td>
+        <td>81.01%</td>
+        <td>79.86</td>
+        <td>76.08%</td>
+        <td>84.30</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>84.34%</td>
+        <td>68.44</td>
+        <td>84.61%</td>
+        <td>68.45</td>
+        <td>75.45%</td>
+        <td>76.41</td>
+        <td>83.43%</td>
+        <td>57.87</td>
+        <td>62.09%</td>
+        <td>60.33</td>
     </tr>
 </table>
 
