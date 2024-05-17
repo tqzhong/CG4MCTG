@@ -5,7 +5,6 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
  --num_train_epochs 3 \
- --batch_size 8 \
  --dataset 'Amazon' \
  --unseen_combs_path '../data/Amazon/unseen.jsonl' \
  --dataset_path '../data/Amazon/gen.jsonl' \
@@ -20,7 +19,6 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
  --num_train_epochs 3 \
- --batch_size 8 \
  --dataset 'Amazon' \
  --unseen_combs_path '../data/Amazon/unseen.jsonl' \
  --dataset_path '../data/Amazon/gen.jsonl' \
@@ -45,7 +43,6 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
  --num_train_epochs 3 \
- --batch_size 8 \
  --dataset 'Amazon' \
  --unseen_combs_path '../data/Amazon/unseen.jsonl' \
  --dataset_path '../data/Amazon/gen.jsonl' \
@@ -56,4 +53,15 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --lambda_s 0.01 \
  --sample_train \
  --num_sample_combs 2
-``` 
+```
+
+## 4. CompMCTG Benchmark
+For each dataset in CompMCTG Benchmark, the results for each protocol are derived form the average of multiple experiments. The number of partitioning methods included in different protocol across four datasets is presented below:
+|Dataset|Original|Hold-Out|ACD|Few-Shot|
+|:-|:-:|:-:|:-:|:-:|
+|Fyelp|1|40|10|2|
+|Amazon|1|12|-|10|
+|YELP|1|8|10|8|
+|Mixture|1|8|-|8|
+
+
