@@ -167,6 +167,47 @@ Then we get the results as follows:
     </tr>
 </table>
 
+Ultimately, by averaging the results across the four datasets, we obtain the results presented in the main table (Table 1 in the paper) of the CompMCTG Benchmark:
+<table>
+ <tr>
+        <th rowspan="3">Method</th>
+        <th colspan="2">Original</th>
+        <th colspan="4">Hold-Out</th>
+        <th colspan="4">ACD</th>
+        <th colspan="3">Average</th>
+ </tr>
+ <tr>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>comp</sub></th>
+        <th>P<sub>comp</sub></th>
+        <th>A<sub>i.d.</sub></th>
+        <th>P<sub>i.d.</sub></th>
+        <th>A<sub>comp</sub></th>
+        <th>A<sub>comp</sub></th>
+        <th>A<sub>avg</sub></th>
+        <th>P<sub>avg</sub></th>
+        <th>G<sub>avg</sub></th>
+ </tr>
+ <tr>
+        <td>DCG</td>
+        <td>79.93%</td>
+        <td>56.37</td>
+        <td>79.72%</td>
+        <td>62.05</td>
+        <td>76.66%</td>
+        <td>64.40</td>
+        <td>78.43%</td>
+        <td>57.97</td>
+        <td>67.70%</td>
+        <td>61.11</td>
+        <td>76.49%</td>
+        <td>60.38</td>
+        <td>8.76%</td>
+ </tr>
+</table>
 
 
 
