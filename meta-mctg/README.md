@@ -91,7 +91,7 @@ do
 done
 ```
 
-Similarly, for the dataset Fyelp, Amazon, and Mixture, note that **the results of ACD protocol of dataset Mixture and Amazon is the considered the same as their Few-Shot protocol's counterpart, which implies that the results from this section will be reused in both the Benchmark main table and the Few-Shot results table.**
+Similarly, we conduct corresponding experiments for the dataset Fyelp, Amazon, and Mixture. Note that **the results of ACD protocol of dataset Mixture and Amazon is the considered the same as their Few-Shot protocol's counterpart, which implies that the results from this section will be reused in both the Benchmark main table and the Few-Shot results table.**
 
 Then we get the results as follows:
 <table>
