@@ -170,7 +170,7 @@ Then we get the results as follows:
 Ultimately, by averaging the results across the four datasets, we obtain the results presented in the main table (Table 1 in the paper) of the CompMCTG Benchmark:
 <table>
  <tr>
-        <th rowspan="3">Method</th>
+        <th rowspan="2">Method</th>
         <th colspan="2">Original</th>
         <th colspan="4">Hold-Out</th>
         <th colspan="4">ACD</th>
