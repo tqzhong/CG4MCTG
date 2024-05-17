@@ -43,7 +43,7 @@ unzip classifiers.zip
 └── eval_compmctg.sh
 ```
 
-In this path, there four folders named "Amazon", "Fyelp", "Mixture",  and "Yelp". Each folder contains several classifiers.
+In this path, there are four folders named "Amazon", "Fyelp", "Mixture",  and "Yelp". Each folder contains several classifiers.
 
 ### 2. Evaluation
 
@@ -54,9 +54,9 @@ bash eval_compmctg.sh
 **Parameters:**
 
 - --dataset_path: path of the file you want to evaluate.
-- --dataset: choices = ['Fyelp', 'Amazon', 'Yelp', 'Mixture'], the dataset category of test file.
+- --dataset: choices = ['Fyelp', 'Amazon', 'Yelp', 'Mixture'], the dataset category of the test file.
 - --device_num: GPU id.
 
 ### 3. Test Cases
 
-All files applied to our CompMCTG Benchmark test must meet the following format requirements: it is a jsonl file, each piece of data contains the "text" key and the corresponding attribute key. For test sample files, check the test_cases.
+All files applied to our CompMCTG Benchmark test must meet the following format requirements: it is a jsonl file, and each piece of data contains the "text" key and the corresponding attribute key. For test sample files, check the test_cases.
