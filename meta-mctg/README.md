@@ -1,6 +1,6 @@
 # CompMCTG Benchmark \& Meta-MCTG
 ## 1. Training Common DCG
-```python
+```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
@@ -14,7 +14,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
 ```
 
 ## 2. Training Meta DCG (meta-mctg-training)
-```
+```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
@@ -38,7 +38,7 @@ In our experience, when the number of seen attribtue combinations is larger than
 
 When the number of seen attribute combinations is smaller than mini-batch (e.g., Hold-Out/ACD of Yelp or Hold-Out of Mixture), "meta-mctg-training" almost not work because we can hardly construct the "pseudo-comp batch" based on a ramdom sampled train batch. In this situation, we always use "meta-mctg-sample-training" and we set the value of "num_sample_combs" to 2 for most of the time. It is worth noting that the value of "num_sample_combs" connot be set to 1, as this connot construct the "pseudo-comp batch" either (no compositional generalization when the number of combinations in "train batch" is 1).
 
-```
+```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
  --output_data_dir '../test_data' \
@@ -64,4 +64,30 @@ For each dataset in CompMCTG Benchmark, the results for each protocol are derive
 |YELP|1|8|10|8|
 |Mixture|1|8|-|8|
 
+Take dataset YELP as an example
+- Results of Original
+```shell
+python dcg_meta.py --dataset 'YELP' --mode 'Original' --idx 0
+```
+- Average Results of Hold-Out
+```shell
+for idx in 0 1 2 3 4 5 6 7
+do
+ python dcg_meta.py --dataset 'YELP' --mode 'Hold-Out' --idx ${idx}
+done
+```
+- Average Results of ACD
+```shell
+for idx in 0 1 2 3 4 5 6 7 8 9
+do
+ python dcg_meta.py --dataset 'YELP' --mode 'ACD' --idx ${idx}
+done
+```
+- Average Results of Few-Shot
+```shell
+for idx in 0 1 2 3 4 5 6 7
+do
+ python dcg_meta.py --dataset 'YELP' --mode 'Few-Shot' --idx ${idx}
+done
+```
 
