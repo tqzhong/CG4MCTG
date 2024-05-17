@@ -1,5 +1,5 @@
 # CG4MCTG
-This is the official implementation for our paper "Benchmarking and Improving Compositional Generalization of Multi-aspect Controllable Text Generation".
+This is the official implementation for our paper [Benchmarking and Improving Compositional Generalization of Multi-aspect Controllable Text Generation](https://arxiv.org/pdf/2404.04232.pdf)" which has been accepted to appear at ACL 2024. If you have any questions, please feel free to create an issue or contact the email: ztq602656097@mail.ustc.edu.cn
 
 DETAILS IN ONE MONTH...
 
