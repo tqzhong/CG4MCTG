@@ -1,5 +1,5 @@
 # CompMCTG Benchmark \& Meta-MCTG
-## 1. Training Common DCG
+## 1. Training Common MCTG
 ```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
@@ -13,7 +13,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --idx 1
 ```
 
-## 2. Training Meta DCG (meta-mctg-training)
+## 2. Training Meta MCTG (meta-mctg-training)
 ```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
@@ -29,7 +29,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --lambda_s 0.01
 ```
 
-## 3. Training Meta DCG (meta-mctg-sample-training)
+## 3. Training Meta MCTG (meta-mctg-sample-training)
 When the number of seen attribute combinations is smaller than mini-batch, using basic Meta DCG is not efficient. Meta-mctg-sample-training is a method that control the number of attribute combinations in the train batch to a certain value (i.e., hyperparameter "num_sample_combs") so that we can construct the pseudo-comp batch easier when the number of seen combinations is smaller than mini-batch. For example, in ACD of YELP, the number of seen attribute combinations is 4, which is smaller than mini-batch that equals to 8, if we use common "meta-mctg-training", we will sample a train batch randomly from the dataloader and the number of attribute combinations in the train batch is going to be high probability equal to four (or three whatever). In this casem there will be no other combination to build a pseudo-comp batch.
 
 Note: When the number of seen attribute combinations is smaller than mini-batch, script will enforce the use of meta-mctg sample training. When the number of seen attribute combinations is equal to mini-batch or larger than mini-batch, you can choose using meta-mctg-training or meta-mctg-sample-training. But when you choose using meta-mctg-sample-training, you need to set the value of "num_sample_combs".
