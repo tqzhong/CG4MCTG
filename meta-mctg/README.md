@@ -96,7 +96,7 @@ Similarly, for the dataset Fyelp, Amazon, and Mixture, note that **the results o
 Then we get the results as follows:
 <table>
     <tr>
-        <th rowspan="2">Method</th>
+        <th rowspan="2">Dataset</th>
         <th colspan="3">Original</th>
         <th colspan="3">Hold-Out</th>
         <th colspan="3">ACD</th>
