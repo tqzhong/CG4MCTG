@@ -56,7 +56,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
 ```
 
 ## 4. CompMCTG Benchmark
-For each dataset in CompMCTG Benchmark, the results for each protocol are derived form the average of multiple experiments. The number of partitioning methods included in different protocol across four datasets is presented below:
+For each dataset in CompMCTG Benchmark, the results for each protocol are derived form the average of multiple experiments, **which means we merge all the generated results from each protocol and send them to evaluation process to get the corresponding results**. The number of partitioning methods included in different protocol across four datasets is presented below:
 |Dataset|Original|Hold-Out|ACD|Few-Shot|
 |:-|:-:|:-:|:-:|:-:|
 |Fyelp|1|40|10|2|
