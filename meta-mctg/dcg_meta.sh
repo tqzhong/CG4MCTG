@@ -3,7 +3,6 @@ model_name_or_path=gpt2-medium
 output_dir=../ckpt
 output_data_dir=../test_data
 num_train_epochs=3
-batch_size=8
 lambda_s=0.01
 dataset=Amazon
 unseen_combs_path=../data/Amazon/unseen.jsonl
@@ -18,7 +17,6 @@ python dcg_meta.py --model_name_or_path $model_name_or_path \
                    --output_dir $output_dir \
                    --output_data_dir $output_data_dir \
                    --num_train_epochs $num_train_epochs \
-                   --batch_size $batch_size \
                    --dataset $dataset \
                    --unseen_combs_path $unseen_combs_path \
                    --dataset_path $dataset_path \
@@ -31,7 +29,6 @@ python dcg_meta.py --model_name_or_path $model_name_or_path \
                    --output_dir $output_dir \
                    --output_data_dir $output_data_dir \
                    --num_train_epochs $num_train_epochs \
-                   --batch_size $batch_size \
                    --dataset $dataset \
                    --unseen_combs_path $unseen_combs_path \
                    --dataset_path $dataset_path \
@@ -54,7 +51,6 @@ python dcg_meta.py --model_name_or_path $model_name_or_path \
                    --output_dir $output_dir \
                    --output_data_dir $output_data_dir \
                    --num_train_epochs $num_train_epochs \
-                   --batch_size $batch_size \
                    --dataset $dataset \
                    --unseen_combs_path $unseen_combs_path \
                    --dataset_path $dataset_path \
