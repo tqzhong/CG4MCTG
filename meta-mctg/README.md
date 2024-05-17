@@ -1,5 +1,7 @@
 # CompMCTG Benchmark \& Meta-MCTG
-## 1. Training Common MCTG
+## 1. Meta-MCTG
+You can check the detail information in dcg_meta.sh
+### 1.1 Training Common MCTG
 ```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
@@ -13,7 +15,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --idx 1
 ```
 
-## 2. Training Meta MCTG (meta-mctg-training)
+### 1.2 Training Meta MCTG (meta-mctg-training)
 ```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --output_dir '../ckpt' \
@@ -29,7 +31,7 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
  --lambda_s 0.01
 ```
 
-## 3. Training Meta MCTG (meta-mctg-sample-training)
+### 1.3 Training Meta MCTG (meta-mctg-sample-training)
 When the number of seen attribute combinations is smaller than mini-batch, using basic Meta DCG is not efficient. Meta-mctg-sample-training is a method that control the number of attribute combinations in the train batch to a certain value (i.e., hyperparameter "num_sample_combs") so that we can construct the pseudo-comp batch easier when the number of seen combinations is smaller than mini-batch. For example, in ACD of YELP, the number of seen attribute combinations is 4, which is smaller than mini-batch that equals to 8, if we use common "meta-mctg-training", we will sample a train batch randomly from the dataloader and the number of attribute combinations in the train batch is going to be high probability equal to four (or three whatever). In this casem there will be no other combination to build a pseudo-comp batch.
 
 Note: When the number of seen attribute combinations is smaller than mini-batch, script will enforce the use of meta-mctg sample training. When the number of seen attribute combinations is equal to mini-batch or larger than mini-batch, you can choose using meta-mctg-training or meta-mctg-sample-training. But when you choose using meta-mctg-sample-training, you need to set the value of "num_sample_combs".
@@ -56,6 +58,8 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
 ```
 
 ## 4. CompMCTG Benchmark
+You can check detail information in dcg_compmctg.sh
+
 For each dataset in CompMCTG Benchmark, the results for each protocol are derived form the average of multiple experiments, **which means that we will merge all result files for each protocol (categorized as seen and unseen) and input the merged files (merge_seen.jsonl and merge_unseen.jsonl) into our evaluation system to obtain the corresponding results for each protocol**. The number of partitioning methods included in different protocol across four datasets is presented below:
 |Dataset|Original|Hold-Out|ACD|Few-Shot|
 |:-|:-:|:-:|:-:|:-:|
