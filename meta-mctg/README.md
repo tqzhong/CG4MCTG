@@ -95,16 +95,61 @@ Similarly, for the dataset Fyelp, Amazon, and Mixture, note that **the results o
 
 Then we get the results as follows:
 <table>
-  <tr>
-    <th>Heading 1</th>
-    <th colspan="2">Heading 2</th>
-  </tr>
-  <tr>
-    <td>Data 1</td>
-    <td>Data 2</td>
-    <td>Data 3</td>
-  </tr>
+    <tr>
+        <th rowspan="2">Method</th>
+        <th colspan="3">Original</th>
+        <th colspan="3">Hold-Out</th>
+        <th colspan="3">ACD</th>
+    </tr>
+    <tr>
+        <th>ΔA(%)</th>
+        <th>P(%)</th>
+        <th>P_full(%)</th>
+        <th>ΔA(%)</th>
+        <th>P(%)</th>
+        <th>P_full(%)</th>
+        <th>ΔA(%)</th>
+        <th>P(%)</th>
+        <th>P_full(%)</th>
+    </tr>
+    <tr>
+        <td>LAMA-in-context Learning</td>
+        <td>61.35%</td>
+        <td>77.30%</td>
+        <td>62.16%</td>
+        <td>25.55%</td>
+        <td>40.82%</td>
+        <td>38.50%</td>
+        <td>62.93%</td>
+        <td>21.17%</td>
+        <td>24.63%</td>
+    </tr>
+    <tr>
+        <td>LAMA-2 (Punyakanok et al., 2023)</td>
+        <td>57.51%</td>
+        <td>57.15%</td>
+        <td>56.62%</td>
+        <td>18.29%</td>
+        <td>49.21%</td>
+        <td>18.49%</td>
+        <td>57.13%</td>
+        <td>49.75%</td>
+        <td>18.22%</td>
+    </tr>
+    <tr>
+        <td>ChatGPT (OpenAI, 2023)</td>
+        <td>57.51%</td>
+        <td>57.15%</td>
+        <td>56.62%</td>
+        <td>18.29%</td>
+        <td>49.21%</td>
+        <td>18.49%</td>
+        <td>57.13%</td>
+        <td>49.75%</td>
+        <td>18.22%</td>
+    </tr>
 </table>
+
 
 
 
