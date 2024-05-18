@@ -13,20 +13,20 @@ unzip classifiers.zip
 ```shell
 ├── classifiers
 │   ├── Amazon
-|       ├── sentiment
-|       ├── topic
+│       ├── sentiment
+│       ├── topic
 │   ├── Fyelp
-|       ├── sentiment
-|       ├── cuisine
-|       ├── gender
-|       ├── tense
+│       ├── sentiment
+│       ├── cuisine
+│       ├── gender
+│       ├── tense
 │   ├── Mixture
-|       ├── sentiment
-|       ├── topic_cged
+│       ├── sentiment
+│       ├── topic_cged
 │   └── Yelp
-|       ├── sentiment
-|       ├── pronoun
-|       ├── tense
+│       ├── sentiment
+│       ├── pronoun
+│       ├── tense
 ├── scripts
 │   ├── eval_acc_Amazon.py
 │   ├── eval_acc_Fyelp.py
