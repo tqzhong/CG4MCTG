@@ -1,6 +1,9 @@
 # CompMCTG Benchmark \& Meta-MCTG
 ## 1. Meta-MCTG
 You can check the detailed information in dcg_meta.sh
+
+![metamctg](/pic/metamctg.png)
+
 ### 1.1 Training Common MCTG
 ```shell
 python dcg_meta.py --model_name_or_path 'gpt2-medium' \
@@ -59,6 +62,8 @@ python dcg_meta.py --model_name_or_path 'gpt2-medium' \
 
 ## 4. CompMCTG Benchmark
 You can check detailed information in dcg_compmctg.sh
+
+![compmctg](/pic/compmctg.png)
 
 For each dataset in CompMCTG Benchmark, the results for each protocol are derived from the average of multiple experiments, **which means that we will merge all result files for each protocol (categorized as seen and unseen) and input the merged files (merge_seen.jsonl and merge_unseen.jsonl) into our evaluation system to obtain the corresponding results for each protocol**. The number of partitioning methods included in different protocols across four datasets is presented below:
 |Dataset|Original|Hold-Out|ACD|Few-Shot|
