@@ -1,0 +1,6 @@
+pytorch==1.13.1
+transformers==4.31.0
+accelerate==0.24.1
+numpy==1.19.2
+openai==0.28.0
+tqdm==4.66.1
