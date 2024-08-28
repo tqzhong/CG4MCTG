@@ -1,6 +1,6 @@
 ## Evaluation of CompMCTG Benchmark
 
-Please click [here](https://pan.quark.cn/s/4d731a1697c2) to download the models for evaluation.
+Please click [here](https://huggingface.co/Tianqi-Zhong/Classifiers_For_CompMCTG) to download the models for evaluation.
 
 ```shell
 mv classifiers.zip ./evaluation
