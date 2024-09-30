@@ -69,7 +69,7 @@ def padding_fuse_fn(data_list:list) -> dict:
     max_text_len = max(text_length)
     for i, item in enumerate(data_list):
         text_pad_len = max_text_len - text_length[i]
-        attention_mask = [1] * text_length[i] + [50256] * text_pad_len
+        attention_mask = [1] * text_length[i] + [0] * text_pad_len
         text = item["text"] + [50256] * text_pad_len
 
         input_ids.append(text)
@@ -236,7 +236,7 @@ def train(args):
     tr_sloss_dis, logging_sloss_dis = 0.0, 0.0
     model.train()
     model.zero_grad()
-    loss_fct = CrossEntropyLoss(ignore_index=0)
+    loss_fct = CrossEntropyLoss(ignore_index=50256)
     args.loss_fct = loss_fct
     logger.info('start_training')
 
