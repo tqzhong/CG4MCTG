@@ -1,0 +1,92 @@
+{
+    "sentiment": {
+        "Negative": 0,
+        "Positive": 1,
+        "0": "Negative",
+        "1": "Positive",
+        "dim": 2
+    },
+    "Negative": "sentiment",
+    "Positive": "sentiment",
+    "gender": {
+        "Female": 0,
+        "Male": 1,
+        "0": "Female",
+        "1": "Male",
+        "dim": 2
+    },
+    "Male": "gender",
+    "Female": "gender",
+    "cuisine": {
+        "Asian": 0,
+        "American": 1,
+        "Mexican": 2,
+        "Bar": 3,
+        "dessert": 4,
+        "0": "Asian",
+        "1": "American",
+        "2": "Mexican",
+        "3": "Bar",
+        "4": "dessert",
+        "dim": 5
+    },
+    "Asian": "cuisine",
+    "American": "cuisine",
+    "Mexican": "cuisine",
+    "Bar": "cuisine",
+    "dessert": "cuisine",
+    "tense": {
+        "Present": 0,
+        "Past": 1,
+        "0": "Present",
+        "1": "Past",
+        "dim": 2
+    },
+    "Present": "tense",
+    "Past": "tense",
+    "topic": {
+        "Books": 0,
+        "Clothing": 1,
+        "Music": 2,
+        "Electronics": 3,
+        "Movies": 4,
+        "Sports": 5,
+        "0": "Books",
+        "1": "Clothing",
+        "2": "Music",
+        "3": "Electronics",
+        "4": "Movies",
+        "5": "Sports",
+        "dim": 6
+    },
+    "Books": "topic",
+    "Clothing": "topic",
+    "Music": "topic",
+    "Electronics": "topic",
+    "Movies": "topic",
+    "Sports": "topic",
+    "topic_cged": {
+        "movies": 0,
+        "opener": 1,
+        "tablets": 2,
+        "auto": 3,
+        "0": "movies",
+        "1": "opener",
+        "2": "tablets",
+        "3": "auto",
+        "dim": 4
+    },
+    "movies": "topic_cged",
+    "opener": "topic_cged",
+    "tablets": "topic_cged",
+    "auto": "topic_cged",
+    "pronoun": {
+        "plural": 0,
+        "singular": 1,
+        "0": "plural",
+        "1": "singular",
+        "dim": 2
+    },
+    "plural": "pronoun",
+    "singular": "pronoun"
+}
