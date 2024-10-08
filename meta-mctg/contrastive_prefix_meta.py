@@ -8,7 +8,7 @@ from transformers import get_linear_schedule_with_warmup, AdamW
 import logging
 from torch.utils.data import Dataset, DataLoader
 from torch.nn import CrossEntropyLoss
-from dataset_benchmark.load_dataset import GenDataset
+from load_dataset import GenDataset
 import argparse
 import random
 import numpy as np
