@@ -240,9 +240,10 @@ def train(args):
     args.loss_fct = loss_fct
     logger.info('start_training')
 
-    mini_batch = args.batch_size * args.gradient_accumulation_steps
-    if len(args.seen_combs) < mini_batch:
-        args.sample_train = True
+    if args.meta_mctg:
+        mini_batch = args.batch_size * args.gradient_accumulation_steps
+        if len(args.seen_combs) < mini_batch:
+            args.sample_train = True
     
     if not args.sample_train:
         '''
